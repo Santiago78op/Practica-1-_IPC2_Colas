@@ -111,8 +111,8 @@ class Grafica_cola():
         file = open(ruta, 'w')
         file.write(f"{digraph}")
         file.close()
-        ver = "dot -Tpng C:\\Users\\santi\\PyCharmProyect\\IPC2\\Practica[1]_IPC2\\app\\Graphivz\\imagen.txt -o C:\\Users\\santi\\PyCharmProyect\\IPC2\\Practica[1]_IPC2\\app\\Graphivz\\grafica.png"
+        ver = "dot -Tpng Graphivz\\imagen.txt -o Graphivz\\grafica.png"
         status = os.system(ver)
-        img = "C:\\Users\\santi\\PyCharmProyect\\IPC2\\Practica[1]_IPC2\\app\\Graphivz\\grafica.png"
+        img = "Graphivz\\grafica.png"
         stado = os.startfile(img)
 
