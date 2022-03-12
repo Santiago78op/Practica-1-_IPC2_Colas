@@ -1,0 +1,69 @@
+        lista = cola.devolver_lista()
+        newList = lista[::-1]
+        tamano = cola.devolver_tamano()
+        nombre = newList[0].name
+        tiempo_1 = newList[0].time
+        num_orden = newList[0].numOfOrder
+        cadena = ''
+        cadena = f'Name: {nombre}\n Time: {tiempo_1}\n Num Order {num_orden}'
+        pizza = ingrdientes.retornarIngrediente()
+
+        total_tempo = 0
+        lista_ingrenientes = ''
+        for ingridient in pizza:
+            tiempo = ingridient.time
+            lista_ingrenientes = lista_ingrenientes + f'{ingridient.type}\n'
+            total_tempo = total_tempo +tiempo
+
+        hora_inicio = tiempo_1.split(":")
+        h1 = timedelta(hours=int(hora_inicio[0]),minutes=int(hora_inicio[1]))
+        resultado = h1 + timedelta(minutes=int(total_tempo))
+
+
+        cadena = cadena + f'\nIngredientes: {lista_ingrenientes} Tiempo total: {resultado}'
+
+
+                                        lista_ingredientes.append(tipo)
+                                    string_list = lista_ingredientes[0].split(',')
+
+
+                                    \n'''+str(dato.numOfOrder)+'''\n'''+str(dato.time)+'''
+
+                                            i = 0
+        cadena = ''
+        for dato in newList[1:]:
+            i = i + 1
+            cadena = f'Name: {dato.name}\n Time: {dato.time}\n Num Order: {dato.numOfOrder}'
+            total_tempo=0
+            for ingridient in pizza:
+                tiempo = ingridient.time
+                lista_ingrenientes = lista_ingrenientes + f'{ingridient.type}\n'
+                total_tempo = total_tempo + tiempo
+
+            hora_inicio = dato.time.split(":")
+            h1 = timedelta(hours=int(hora_inicio[0]), minutes=int(hora_inicio[1]))
+            resultado = h1 + timedelta(minutes=int(total_tempo))
+
+            cadena = cadena + f'\nIngredientes: {lista_ingrenientes} Tiempo total: {resultado}'
+            digraph = (digraph+'''
+            Columna'''+str(i)+'''[label="'''+str(cadena)+'''",group=2,fillcolor=brown];
+            ''')
+
+
+                    if aux[-1] == time:
+                        resultado = h1 + timedelta(minutes=int(total))  # 6:22
+                        h3 = str(resultado)
+                        aux_2.insert(0, h3)
+                    else:
+                        hora_2 = aux_2[0].split(":")  # 6:22
+                        h2 = timedelta(hours=int(hora_2[0]), minutes=int(hora_2[1]))
+                        resultado_3 = h2 - h1  # 7min
+                        resultado_2 = h1 + timedelta(minutes=int(total))  # 6:20
+                        resultado_4 = resultado_3 + resultado_2
+                        h3 = str(resultado_4)
+                        print(h3)
+                        aux_2.insert(0, h3)
+                    lista = nuevaPizza.listaType
+                    lista_Clientes.recorrer()
+                    consumidor = lista_Clientes
+                    graficar.cola(consumidor.name, consumidor.time, consumidor.numOfOrder, h3, lista)

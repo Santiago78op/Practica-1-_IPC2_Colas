@@ -1,0 +1,30 @@
+
+        digraph R {
+            node [shape=box fillcolor="#FFEDBB" style=filled]
+
+            subgraph cluster_p{
+            label = "Lista tipo Cola Ordenes Pizza Entrega"
+            raiz[label = "Ordenes"]
+            bgcolor = "#398D9C"
+            edge[dir = "both"]
+            Fila1[label="En Cola", group=1,fillcolor=green];
+        
+            Columna1[label="Orden: 2
+Start: 6:15
+",group=2,fillcolor=brown];
+            
+            raiz->Fila1;
+            raiz->Columna1;
+            
+            {rank=same;raiz;Columna1;}
+        nodo1_1[label="Pizzas: 1
+End: 6:22:00",fillcolor="#66CDAA",group=2]
+                    
+            Fila1->nodo1_1;
+        
+            {rank=same;Fila1;nodo1_1;}
+        
+            Columna1->nodo1_1;
+            }
+        }
+        

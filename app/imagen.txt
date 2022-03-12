@@ -1,0 +1,16 @@
+
+        digraph R {
+            node [shape=box fillcolor="#FFEDBB" style=filled]
+            
+            subgraph cluster_p{
+            label = "Lista tipo Cola Ordenes Pizza"
+            raiz[label = "Inicio"]
+            bgcolor = "#398D9C"
+            edge[dir = "both"]
+            Fila1[label=10, group=1,fillcolor=brown];
+        
+        Fila2[label="Final", group=1]; 
+        
+            }
+        }
+        
